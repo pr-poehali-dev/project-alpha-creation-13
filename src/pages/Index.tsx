@@ -82,11 +82,43 @@ export default function HomePage() {
           </div>
         </nav>
 
-        {/* Hero center */}
-        <div className="flex-1 flex items-center justify-center px-6 py-8">
-          <div className="text-center">
+        {/* Hero — три колонки: левые контакты | центр | правые контакты */}
+        <div className="flex-1 flex items-center justify-between px-6 md:px-12 py-8 gap-4">
 
-            {/* Название без рамок */}
+          {/* Левая колонка — контакты */}
+          <div className="hidden md:flex flex-col gap-3 items-start">
+            <p className="text-[9px] font-semibold tracking-[0.4em] uppercase text-white/35 mb-1">Контакты</p>
+            <a
+              href="https://t.me/fashenki"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+            >
+              <Icon name="Send" size={11} />
+              Канал fashenki
+            </a>
+            <a
+              href="https://t.me/yastrebovajulie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+            >
+              <Icon name="MessageCircle" size={11} />
+              @yastrebovajulie
+            </a>
+            <a
+              href="https://instagram.com/yastrebovajulie"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+            >
+              <Icon name="Instagram" size={11} />
+              Instagram
+            </a>
+          </div>
+
+          {/* Центр */}
+          <div className="text-center flex-1">
             <div className="mb-3">
               <h1
                 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none"
@@ -110,8 +142,7 @@ export default function HomePage() {
               ОДЕЖДА И ЭСКИЗЫ
             </p>
 
-            {/* Кнопки разделов */}
-            <div className="flex flex-row gap-3 justify-center mb-10">
+            <div className="flex flex-row gap-3 justify-center mb-8">
               <button
                 onClick={() => setActiveSection("illustrations")}
                 className="bg-white/15 backdrop-blur-sm text-white px-6 py-2 text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-white/30 transition-all"
@@ -126,43 +157,48 @@ export default function HomePage() {
               </button>
             </div>
 
-            {/* Контакты — без рамок, компактно */}
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-[9px] font-semibold tracking-[0.4em] uppercase text-white/35 mb-1">Контакты</p>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center">
-                <a
-                  href="https://t.me/fashenki"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium"
-                >
-                  <Icon name="Send" size={11} />
-                  Канал fashenki
-                </a>
-                <a
-                  href="https://t.me/yastrebovajulie"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium"
-                >
-                  <Icon name="MessageCircle" size={11} />
-                  @yastrebovajulie
-                </a>
-                <a
-                  href="https://instagram.com/yastrebovajulie"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium"
-                >
-                  <Icon name="Instagram" size={11} />
-                  Instagram
-                </a>
-              </div>
+            {/* Мобильные контакты — только на маленьких экранах */}
+            <div className="flex md:hidden flex-wrap gap-x-4 gap-y-2 justify-center mb-4">
+              <a href="https://t.me/fashenki" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium bg-white/10 px-3 py-1.5 rounded-full">
+                <Icon name="Send" size={11} />Канал fashenki
+              </a>
+              <a href="https://t.me/yastrebovajulie" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium bg-white/10 px-3 py-1.5 rounded-full">
+                <Icon name="MessageCircle" size={11} />@yastrebovajulie
+              </a>
+              <a href="https://instagram.com/yastrebovajulie" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium bg-white/10 px-3 py-1.5 rounded-full">
+                <Icon name="Instagram" size={11} />Instagram
+              </a>
             </div>
 
             <button
               onClick={() => setActiveSection("about")}
-              className="mt-6 text-[10px] font-medium tracking-widest uppercase text-white/35 hover:text-white/70 transition-colors"
+              className="text-[10px] font-medium tracking-widest uppercase text-white/35 hover:text-white/70 transition-colors"
+            >
+              Об авторе
+            </button>
+          </div>
+
+          {/* Правая колонка — дополнительные ссылки */}
+          <div className="hidden md:flex flex-col gap-3 items-end">
+            <p className="text-[9px] font-semibold tracking-[0.4em] uppercase text-white/35 mb-1">Навигация</p>
+            <button
+              onClick={() => setActiveSection("illustrations")}
+              className="text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+            >
+              Иллюстрации
+            </button>
+            <button
+              onClick={() => setActiveSection("collection")}
+              className="text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+            >
+              Коллекция
+            </button>
+            <button
+              onClick={() => setActiveSection("about")}
+              className="text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
             >
               Об авторе
             </button>

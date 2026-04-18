@@ -81,10 +81,10 @@ export function MiniAppIllustrations() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="flex items-end justify-between mb-8 border-b-[3px] border-black pb-4">
+      <div className="flex items-end justify-between mb-8 border-b border-black/15 pb-4">
         <div>
-          <p className="text-xs font-bold tracking-[0.3em] uppercase text-gray-400 mb-1">01</p>
-          <h2 className="text-4xl md:text-5xl font-black" style={{ fontFamily: "Playfair Display, serif" }}>
+          <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gray-400 mb-1">01</p>
+          <h2 className="text-2xl md:text-3xl font-black" style={{ fontFamily: "Playfair Display, serif" }}>
             Иллюстрации
           </h2>
         </div>
@@ -92,9 +92,9 @@ export function MiniAppIllustrations() {
           href="https://t.me/fashenki"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm font-bold border-[2px] border-black px-4 py-2 rounded-xl hover:bg-[#D32F2F] hover:text-white hover:border-[#D32F2F] transition-all"
+          className="flex items-center gap-1.5 text-[11px] font-medium text-black/50 hover:text-black transition-colors"
         >
-          <Icon name="Send" size={14} />
+          <Icon name="Send" size={11} />
           Все работы в канале
         </a>
       </div>
@@ -123,21 +123,17 @@ export function MiniAppIllustrations() {
                 </div>
               </div>
             </div>
-            <div className="p-4">
-              <div className="flex items-start justify-between gap-2">
-                <div>
-                  <h3 className="font-black text-base leading-tight" style={{ fontFamily: "Playfair Display, serif" }}>
-                    {item.title}
-                  </h3>
-                  <p className="text-xs text-gray-500 mt-1 font-medium">{item.description}</p>
-                </div>
-                <span
-                  className="text-xs font-bold px-2 py-1 rounded-full shrink-0 text-white"
-                  style={{ backgroundColor: item.color }}
-                >
-                  {item.year}
-                </span>
-              </div>
+            <div className="p-3">
+              <h3 className="font-black text-sm leading-tight mb-0.5" style={{ fontFamily: "Playfair Display, serif" }}>
+                {item.title}
+              </h3>
+              <p className="text-[11px] text-gray-400 mb-2 font-medium">{item.description}</p>
+              <button
+                onClick={(e) => { e.stopPropagation(); }}
+                className="text-[10px] font-semibold uppercase tracking-wider bg-black text-white px-3 py-1 rounded-full hover:bg-gray-700 transition-colors"
+              >
+                Купить
+              </button>
             </div>
           </button>
         ))}
@@ -148,10 +144,10 @@ export function MiniAppIllustrations() {
           href="https://t.me/fashenki"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+          className="inline-flex items-center gap-1.5 bg-black text-white px-4 py-2 font-semibold text-xs uppercase tracking-widest rounded-full shadow hover:shadow-md hover:-translate-y-0.5 transition-all"
         >
-          <Icon name="Send" size={16} />
-          Telegram-канал fashenki
+          <Icon name="Send" size={12} />
+          Telegram fashenki
         </a>
       </div>
 
