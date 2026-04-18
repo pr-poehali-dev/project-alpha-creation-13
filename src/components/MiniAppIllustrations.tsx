@@ -4,57 +4,75 @@ import Icon from "@/components/ui/icon"
 const ILLUSTRATIONS = [
   {
     id: 1,
-    title: "Монохром I",
-    description: "Силуэт в оверсайз-пальто",
-    year: "2024",
-    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/8e4b3c1c-63fd-4cfa-94c2-1a3225b8a06e.jpg",
-    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/8e4b3c1c-63fd-4cfa-94c2-1a3225b8a06e.jpg",
+    title: "Розовый жакет",
+    description: "Полосатый жакет с бантом",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/39622cb7-dc18-4b54-92f0-e2a2c3b42ebc.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/39622cb7-dc18-4b54-92f0-e2a2c3b42ebc.jpg",
     color: "#D32F2F",
   },
   {
     id: 2,
-    title: "Геометрия форм",
-    description: "Капсула — вертикаль и объём",
-    year: "2024",
-    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/ef326723-f449-4676-895e-7119f511f4ca.jpg",
-    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/ef326723-f449-4676-895e-7119f511f4ca.jpg",
+    title: "Yastrebova",
+    description: "Уличный стиль, белый блейзер",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/90c5e0e0-4987-4899-ae24-3e810a4d70c7.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/90c5e0e0-4987-4899-ae24-3e810a4d70c7.jpg",
     color: "#1565C0",
   },
   {
     id: 3,
-    title: "Эскиз коллекции",
-    description: "Мудборд весенней капсулы",
-    year: "2024",
-    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/cfbf6ed1-07de-478f-9a08-a3553c426258.jpg",
-    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/cfbf6ed1-07de-478f-9a08-a3553c426258.jpg",
-    color: "#F9A825",
+    title: "Тренч и берет",
+    description: "Винтажный образ с пальто",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/fe4781e3-6306-40d7-a9bf-43bed9b5be15.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/fe4781e3-6306-40d7-a9bf-43bed9b5be15.jpg",
+    color: "#6D4C41",
   },
   {
     id: 4,
-    title: "Объём и линия",
-    description: "Редакционная иллюстрация",
-    year: "2023",
-    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/8e4b3c1c-63fd-4cfa-94c2-1a3225b8a06e.jpg",
-    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/8e4b3c1c-63fd-4cfa-94c2-1a3225b8a06e.jpg",
-    color: "#D32F2F",
-  },
-  {
-    id: 5,
-    title: "Цветовой блок",
-    description: "Образ в стиле неопластицизма",
-    year: "2023",
-    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/ef326723-f449-4676-895e-7119f511f4ca.jpg",
-    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/ef326723-f449-4676-895e-7119f511f4ca.jpg",
+    title: "Монохром",
+    description: "Чёрный силуэт с синими очками",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/37c3e1cc-d556-4b16-89cb-20f0f5fac4f3.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/37c3e1cc-d556-4b16-89cb-20f0f5fac4f3.jpg",
     color: "#1565C0",
   },
   {
+    id: 5,
+    title: "Красный вечер",
+    description: "Гала-образ, красное платье",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/7f9a6478-f5c7-4866-87e8-79bef47d8f88.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/7f9a6478-f5c7-4866-87e8-79bef47d8f88.jpg",
+    color: "#D32F2F",
+  },
+  {
     id: 6,
-    title: "Белый и красный",
-    description: "Зимняя капсула",
-    year: "2023",
-    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/cfbf6ed1-07de-478f-9a08-a3553c426258.jpg",
-    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/files/cfbf6ed1-07de-478f-9a08-a3553c426258.jpg",
+    title: "Miu Miu",
+    description: "Цветочное платье, жёлтая сумка",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/e20f73bc-8ca4-4539-bfab-ecc5795db80d.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/e20f73bc-8ca4-4539-bfab-ecc5795db80d.jpg",
     color: "#F9A825",
+  },
+  {
+    id: 7,
+    title: "Миuccia Prada",
+    description: "На открытии выставки Sueño Perrro",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/9c8fcb01-1eb9-45dc-8a0c-6b15efcc14f1.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/9c8fcb01-1eb9-45dc-8a0c-6b15efcc14f1.jpg",
+    color: "#F57F17",
+  },
+  {
+    id: 8,
+    title: "Chanel Girl",
+    description: "Розовый твид и пакеты Chanel",
+    year: "2025",
+    thumb: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/12a9f286-d26c-4389-8e3a-d039f4b71b24.jpg",
+    full: "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437b43655a/bucket/12a9f286-d26c-4389-8e3a-d039f4b71b24.jpg",
+    color: "#1565C0",
   },
 ]
 
@@ -74,21 +92,19 @@ export function MiniAppIllustrations() {
           href="https://t.me/fashenki"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-sm font-bold border-[2px] border-black px-4 py-2 hover:bg-[#D32F2F] hover:text-white hover:border-[#D32F2F] transition-all"
+          className="flex items-center gap-2 text-sm font-bold border-[2px] border-black px-4 py-2 rounded-xl hover:bg-[#D32F2F] hover:text-white hover:border-[#D32F2F] transition-all"
         >
           <Icon name="Send" size={14} />
           Все работы в канале
         </a>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border-[3px] border-black">
-        {ILLUSTRATIONS.map((item, i) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {ILLUSTRATIONS.map((item) => (
           <button
             key={item.id}
             onClick={() => setLightbox(item)}
-            className={`group relative border-black bg-white hover:z-10 transition-all cursor-pointer text-left ${
-              i % 3 !== 2 ? "border-r-[3px]" : ""
-            } ${i < 3 ? "border-b-[3px]" : ""}`}
+            className="group relative bg-white hover:z-10 transition-all cursor-pointer text-left rounded-2xl overflow-hidden border-[2px] border-black/10 shadow-md hover:shadow-xl hover:-translate-y-1"
           >
             <div className="aspect-[4/5] overflow-hidden relative">
               <img
@@ -102,12 +118,12 @@ export function MiniAppIllustrations() {
                 style={{ backgroundColor: item.color }}
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="bg-white border-[2px] border-black p-3">
+                <div className="bg-white/90 rounded-full p-3 shadow-lg">
                   <Icon name="ZoomIn" size={20} />
                 </div>
               </div>
             </div>
-            <div className="p-4 border-t-[2px] border-black">
+            <div className="p-4">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <h3 className="font-black text-base leading-tight" style={{ fontFamily: "Playfair Display, serif" }}>
@@ -116,8 +132,8 @@ export function MiniAppIllustrations() {
                   <p className="text-xs text-gray-500 mt-1 font-medium">{item.description}</p>
                 </div>
                 <span
-                  className="text-xs font-bold px-2 py-1 border-[2px] border-black shrink-0"
-                  style={{ backgroundColor: item.color, color: "white" }}
+                  className="text-xs font-bold px-2 py-1 rounded-full shrink-0 text-white"
+                  style={{ backgroundColor: item.color }}
                 >
                   {item.year}
                 </span>
@@ -132,7 +148,7 @@ export function MiniAppIllustrations() {
           href="https://t.me/fashenki"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 font-black text-sm uppercase tracking-widest border-[3px] border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)] hover:translate-x-[4px] hover:translate-y-[4px] transition-all"
+          className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 font-black text-sm uppercase tracking-widest rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
         >
           <Icon name="Send" size={16} />
           Telegram-канал fashenki
@@ -151,7 +167,7 @@ export function MiniAppIllustrations() {
           >
             <button
               onClick={() => setLightbox(null)}
-              className="absolute top-4 right-4 z-10 bg-white border-[2px] border-black p-2 hover:bg-black hover:text-white transition-all"
+              className="absolute top-4 right-4 z-10 bg-white border-[2px] border-black p-2 rounded-xl hover:bg-black hover:text-white transition-all"
             >
               <Icon name="X" size={16} />
             </button>

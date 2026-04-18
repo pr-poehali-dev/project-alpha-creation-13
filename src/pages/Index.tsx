@@ -16,7 +16,7 @@ export default function HomePage() {
         <header className="flex items-center justify-between px-6 py-4 border-b-[3px] border-black bg-white">
           <button
             onClick={() => setActiveSection(null)}
-            className="flex items-center gap-2 font-bold text-sm border-[2px] border-black px-3 py-2 hover:bg-black hover:text-white transition-all"
+            className="flex items-center gap-2 font-bold text-sm border-[2px] border-black px-3 py-2 rounded-xl hover:bg-black hover:text-white transition-all"
           >
             <Icon name="ArrowLeft" size={16} />
             Назад
@@ -29,7 +29,7 @@ export default function HomePage() {
               href="https://t.me/fashenki"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs font-bold border-[2px] border-black px-3 py-2 hover:bg-[#1565C0] hover:text-white hover:border-[#1565C0] transition-all"
+              className="flex items-center gap-1 text-xs font-bold border-[2px] border-black px-3 py-2 rounded-xl hover:bg-[#1565C0] hover:text-white hover:border-[#1565C0] transition-all"
             >
               <Icon name="Send" size={12} />
               Канал
@@ -62,7 +62,7 @@ export default function HomePage() {
               href="https://t.me/fashenki"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs font-bold border-[2px] border-black px-3 py-2 hover:bg-[#D32F2F] hover:text-white hover:border-[#D32F2F] transition-all"
+              className="flex items-center gap-1 text-xs font-bold border-[2px] border-black px-3 py-2 rounded-xl hover:bg-[#D32F2F] hover:text-white hover:border-[#D32F2F] transition-all"
             >
               <Icon name="Send" size={12} />
               fashenki
@@ -71,7 +71,7 @@ export default function HomePage() {
               href="https://t.me/yastrebovajulie"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs font-bold border-[2px] border-black px-3 py-2 hover:bg-[#1565C0] hover:text-white hover:border-[#1565C0] transition-all"
+              className="flex items-center gap-1 text-xs font-bold border-[2px] border-black px-3 py-2 rounded-xl hover:bg-[#1565C0] hover:text-white hover:border-[#1565C0] transition-all"
             >
               <Icon name="User" size={12} />
               @yastrebovajulie
@@ -112,17 +112,17 @@ export default function HomePage() {
             </p>
 
             {/* Two main CTA blocks */}
-            <div className="flex flex-col sm:flex-row gap-0 justify-center mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <button
                 onClick={() => setActiveSection("illustrations")}
-                className="group relative bg-white border-[3px] border-black px-10 py-6 font-black text-lg uppercase tracking-widest hover:bg-[#D32F2F] hover:text-white transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px] sm:border-r-0"
+                className="group relative bg-white border-[2px] border-black px-10 py-6 font-black text-lg uppercase tracking-widest hover:bg-[#D32F2F] hover:text-white transition-all rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 <span className="block text-xs text-gray-400 group-hover:text-red-100 font-bold tracking-widest mb-1">01</span>
                 Иллюстрации
               </button>
               <button
                 onClick={() => setActiveSection("collection")}
-                className="group relative bg-black text-white border-[3px] border-black px-10 py-6 font-black text-lg uppercase tracking-widest hover:bg-[#1565C0] transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px]"
+                className="group relative bg-black text-white border-[2px] border-black px-10 py-6 font-black text-lg uppercase tracking-widest hover:bg-[#1565C0] transition-all rounded-2xl shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 <span className="block text-xs text-gray-400 group-hover:text-blue-100 font-bold tracking-widest mb-1">02</span>
                 Коллекция
