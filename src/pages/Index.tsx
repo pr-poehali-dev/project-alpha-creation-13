@@ -147,13 +147,13 @@ export default function HomePage() {
             <div className="flex flex-row gap-3 justify-center mb-8">
               <button
                 onClick={() => setActiveSection("illustrations")}
-                className="bg-white/15 backdrop-blur-sm text-white px-6 py-2 text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-white/30 transition-all"
+                className="bg-black/70 backdrop-blur-sm text-white px-6 py-2 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-black/90 transition-all shadow-lg"
               >
                 Иллюстрации
               </button>
               <button
                 onClick={() => setActiveSection("collection")}
-                className="bg-white/15 backdrop-blur-sm text-white px-6 py-2 text-xs font-semibold uppercase tracking-widest rounded-full hover:bg-white/30 transition-all"
+                className="bg-black/70 backdrop-blur-sm text-white px-6 py-2 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-black/90 transition-all shadow-lg"
               >
                 Коллекция
               </button>
@@ -177,7 +177,7 @@ export default function HomePage() {
 
             <button
               onClick={() => setActiveSection("about")}
-              className="text-[10px] font-medium tracking-widest uppercase text-white/35 hover:text-white/70 transition-colors"
+              className="text-[11px] font-bold tracking-widest uppercase text-white bg-black/60 px-4 py-1.5 rounded-full hover:bg-black/80 transition-colors shadow"
             >
               Об авторе
             </button>
