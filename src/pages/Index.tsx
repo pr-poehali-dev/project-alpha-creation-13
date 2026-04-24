@@ -11,7 +11,7 @@ const BG_IMAGE = "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState<Section>(null)
 
-  const isDark = activeSection === "illustrations"
+  const isDark = activeSection === "illustrations" || activeSection === "about"
 
   if (activeSection) {
     return (

@@ -137,12 +137,15 @@ export function MiniAppIllustrations() {
               <p className="text-[11px] text-white/40 font-medium pr-16">{item.description}</p>
 
               {/* Кнопка "Купить" — правый нижний угол */}
-              <button
-                onClick={(e) => { e.stopPropagation() }}
+              <a
+                href={`https://t.me/yastrebovajulie?text=${encodeURIComponent(`Привет! Хочу купить иллюстрацию «${item.title}» за ${item.price.toLocaleString("ru-RU")} ₽`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
                 className="absolute bottom-3 right-3 flex items-center gap-1 bg-white text-black text-[10px] font-bold uppercase tracking-wide px-2.5 py-1.5 rounded-full hover:bg-white/80 transition-colors shadow-md"
               >
                 {item.price.toLocaleString("ru-RU")} ₽
-              </button>
+              </a>
             </div>
           </div>
         ))}
@@ -184,9 +187,14 @@ export function MiniAppIllustrations() {
                 </h3>
                 <p className="text-white/50 font-medium mt-1">{lightbox.description}</p>
               </div>
-              <button className="bg-white text-black font-bold text-sm px-5 py-2.5 rounded-full hover:bg-white/80 transition-colors">
+              <a
+                href={`https://t.me/yastrebovajulie?text=${encodeURIComponent(`Привет! Хочу купить иллюстрацию «${lightbox.title}» за ${lightbox.price.toLocaleString("ru-RU")} ₽`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-black font-bold text-sm px-5 py-2.5 rounded-full hover:bg-white/80 transition-colors"
+              >
                 {lightbox.price.toLocaleString("ru-RU")} ₽ — Купить
-              </button>
+              </a>
             </div>
           </div>
         </div>
