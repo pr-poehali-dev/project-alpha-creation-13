@@ -11,25 +11,27 @@ const BG_IMAGE = "https://cdn.poehali.dev/projects/3c1ec495-fb99-4f92-953d-ee437
 export default function HomePage() {
   const [activeSection, setActiveSection] = useState<Section>(null)
 
+  const isDark = activeSection === "illustrations"
+
   if (activeSection) {
     return (
-      <div className="min-h-screen bg-[#F5F0EB]">
-        <header className="flex items-center justify-between px-6 py-4 bg-white/90 backdrop-blur-md border-b border-black/10">
+      <div className={`min-h-screen ${isDark ? "bg-[#0e0e0e]" : "bg-[#F5F0EB]"}`}>
+        <header className={`flex items-center justify-between px-6 py-4 backdrop-blur-md border-b ${isDark ? "bg-white/5 border-white/10" : "bg-white/90 border-black/10"}`}>
           <button
             onClick={() => setActiveSection(null)}
-            className="flex items-center gap-2 font-medium text-sm text-black/60 hover:text-black transition-colors"
+            className={`flex items-center gap-2 font-medium text-sm transition-colors ${isDark ? "text-white/50 hover:text-white" : "text-black/60 hover:text-black"}`}
           >
             <Icon name="ArrowLeft" size={16} />
             Назад
           </button>
-          <span className="font-black text-base tracking-widest uppercase" style={{ fontFamily: "Playfair Display, serif" }}>
+          <span className={`font-black text-base tracking-widest uppercase ${isDark ? "text-white" : "text-black"}`} style={{ fontFamily: "Playfair Display, serif" }}>
             Yastrebova JY
           </span>
           <a
             href="https://t.me/fashenki"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-xs text-black/50 hover:text-black transition-colors font-medium"
+            className={`flex items-center gap-1 text-xs transition-colors font-medium ${isDark ? "text-white/40 hover:text-white" : "text-black/50 hover:text-black"}`}
           >
             <Icon name="Send" size={12} />
             fashenki
@@ -92,7 +94,7 @@ export default function HomePage() {
               href="https://t.me/fashenki"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+              className="flex items-center gap-2 text-[11px] text-white font-semibold bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors"
             >
               <Icon name="Send" size={11} />
               Канал fashenki
@@ -101,7 +103,7 @@ export default function HomePage() {
               href="https://t.me/yastrebovajulie"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+              className="flex items-center gap-2 text-[11px] text-white font-semibold bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors"
             >
               <Icon name="MessageCircle" size={11} />
               @yastrebovajulie
@@ -110,7 +112,7 @@ export default function HomePage() {
               href="https://instagram.com/yastrebovajulie"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+              className="flex items-center gap-2 text-[11px] text-white font-semibold bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors"
             >
               <Icon name="Instagram" size={11} />
               Instagram
@@ -158,17 +160,17 @@ export default function HomePage() {
             </div>
 
             {/* Мобильные контакты — только на маленьких экранах */}
-            <div className="flex md:hidden flex-wrap gap-x-4 gap-y-2 justify-center mb-4">
+            <div className="flex md:hidden flex-wrap gap-x-3 gap-y-2 justify-center mb-4">
               <a href="https://t.me/fashenki" target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium bg-white/10 px-3 py-1.5 rounded-full">
+                className="flex items-center gap-1.5 text-[11px] text-white font-semibold bg-black/50 px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors">
                 <Icon name="Send" size={11} />Канал fashenki
               </a>
               <a href="https://t.me/yastrebovajulie" target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium bg-white/10 px-3 py-1.5 rounded-full">
+                className="flex items-center gap-1.5 text-[11px] text-white font-semibold bg-black/50 px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors">
                 <Icon name="MessageCircle" size={11} />@yastrebovajulie
               </a>
               <a href="https://instagram.com/yastrebovajulie" target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-[11px] text-white/60 hover:text-white transition-colors font-medium bg-white/10 px-3 py-1.5 rounded-full">
+                className="flex items-center gap-1.5 text-[11px] text-white font-semibold bg-black/50 px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors">
                 <Icon name="Instagram" size={11} />Instagram
               </a>
             </div>
@@ -186,19 +188,19 @@ export default function HomePage() {
             <p className="text-[9px] font-semibold tracking-[0.4em] uppercase text-white/35 mb-1">Навигация</p>
             <button
               onClick={() => setActiveSection("illustrations")}
-              className="text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+              className="text-[11px] text-white font-semibold bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors"
             >
               Иллюстрации
             </button>
             <button
               onClick={() => setActiveSection("collection")}
-              className="text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+              className="text-[11px] text-white font-semibold bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors"
             >
               Коллекция
             </button>
             <button
               onClick={() => setActiveSection("about")}
-              className="text-[11px] text-white/70 hover:text-white transition-colors font-medium bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full"
+              className="text-[11px] text-white font-semibold bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition-colors"
             >
               Об авторе
             </button>
